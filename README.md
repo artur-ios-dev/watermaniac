@@ -1,5 +1,7 @@
 # Watermaniac
 
+![Screenshot](/images/watermaniac.jpeg)
+
 We may not think of it, but water can have a large impact on our overall and day-to-day health. As I’m sure you may know, it is important to hydrate regularly in order to preserve adequate mental and physical functions. Many of us do not pay attention to how much water we are drinking and how this can be affecting how we feel and what is happening inside of our bodies.
 
 Most of us ' do' drink water but... do you drink enough? Do you want to make sure you are doing your best to stay healthy? It is time to start tracking how much water you have drunk every day.
