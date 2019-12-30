@@ -17,4 +17,4 @@ It is simple, lightweight and built with Google Flutter. Only core functionaliti
 
 ## Getting Started
 
-It was developed during Flutter beta and has not been migraetd to the latest version yet.
+[✓] Flutter (Channel stable, v1.12.13+hotfix.5
