@@ -24,13 +24,13 @@ class ShadowText extends StatelessWidget {
       data,
       textAlign: textAlign,
       style: style.copyWith(
-        shadows: <Shadow>[
-          Shadow(
-            offset: Offset(offsetX, offsetY),
-            blurRadius: blur,
-            color: shadowColor,
-          ),
-        ],
+        // shadows: <Shadow>[
+        //   Shadow(
+        //     offset: Offset(offsetX, offsetY),
+        //     blurRadius: blur,
+        //     color: shadowColor,
+        //   ),
+        // ],
       ),
     );
   }
