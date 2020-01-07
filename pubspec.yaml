@@ -17,7 +17,7 @@ dependencies:
   intl: ^0.16.0
   flutter_svg: ^0.15.0
   # quick_actions: ^0.2.1
-  flutter_local_notifications: ^0.9.1
+  flutter_local_notifications: ^0.9.1+2
 
 dev_dependencies:
   flutter_test:
