@@ -1,7 +1,7 @@
 name: watermaniac
 description: A new Flutter project.
 
-version: 1.0.4
+version: 1.0.4+20
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
