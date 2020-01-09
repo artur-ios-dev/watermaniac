@@ -1,4 +1,4 @@
-package watermaniac.untitled
+package com.rmzsoft.watermaniac
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
