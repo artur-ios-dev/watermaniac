@@ -1,4 +1,4 @@
-import 'dart:ui' as ui;
+// import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 
 class ShadowIcon extends StatelessWidget {
@@ -17,23 +17,24 @@ class ShadowIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRect(
-      child: Stack(
-        children: [
-          Positioned(
-            top: offsetX,
-            left: offsetY,
-            child: Icon(
-              data,
-              color: shadowColor,
-            ),
-          ),
-          BackdropFilter(
-            filter: ui.ImageFilter.blur(sigmaX: blur, sigmaY: blur),
-            child: Icon(data),
-          ),
-        ],
-      ),
-    );
+    return Icon(data);
+    // ClipRect(
+    //   child: Stack(
+    //     children: [
+    //       Positioned(
+    //         top: offsetX,
+    //         left: offsetY,
+    //         child: Icon(
+    //           data,
+    //           color: shadowColor,
+    //         ),
+    //       ),
+    //       BackdropFilter(
+    //         filter: ui.ImageFilter.blur(sigmaX: blur, sigmaY: blur),
+    //         child: Icon(data),
+    //       ),
+    //     ],
+    //   ),
+    // );
   }
 }
