@@ -15,4 +15,5 @@ class MainActivity: FlutterActivity() {
         super.onCreate(savedInstanceState)
 
     }
+
 }
