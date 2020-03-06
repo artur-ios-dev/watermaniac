@@ -1,3 +1,4 @@
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -30,15 +31,37 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
+  static const MobileAdTargetingInfo _targetingInfo = MobileAdTargetingInfo(
+    keywords: <String>['fortnite', 'skins', 'game', 'battle royale'],
+    contentUrl: 'https://getfoyl.com',
+    childDirected: false,
+    testDevices: <String>[], // Android emulators are considered test devices
+  );
+
+  BannerAd _bannerAd;
+
+  BannerAd createBannerAd() {
+    return BannerAd(
+      adUnitId: BannerAd.testAdUnitId,
+      size: AdSize.banner,
+      targetingInfo: _targetingInfo,
+    );
+  }
+
   void initState() {
     super.initState();
 
     WidgetsBinding.instance.addObserver(this);
+    FirebaseAdMob.instance.initialize(appId: FirebaseAdMob.testAppId);
+    _bannerAd = createBannerAd()
+      ..load()
+      ..show(anchorOffset: 25, anchorType: AnchorType.top);
   }
 
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    _bannerAd?.dispose();
     super.dispose();
   }
 
@@ -158,7 +181,10 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                                   'assets/background/top-background.png'),
                               fit: BoxFit.fitWidth)),
                     ),
-                    _getBody(index),
+                    Padding(
+                      padding: EdgeInsets.only(top: 40),
+                      child: _getBody(index),
+                    ),
                   ],
                 ));
           },
