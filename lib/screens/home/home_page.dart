@@ -32,8 +32,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   static const MobileAdTargetingInfo _targetingInfo = MobileAdTargetingInfo(
-    keywords: <String>['fortnite', 'skins', 'game', 'battle royale'],
-    contentUrl: 'https://getfoyl.com',
+    keywords: <String>['water', 'health', 'drinking', 'fit'],
     childDirected: false,
     testDevices: <String>[], // Android emulators are considered test devices
   );
