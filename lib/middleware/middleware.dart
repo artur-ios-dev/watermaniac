@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:redux/redux.dart';
 import 'package:watermaniac/actions/history_actions.dart';
 import 'package:watermaniac/actions/settings_actions.dart';
