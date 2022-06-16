@@ -274,10 +274,10 @@ class _MinutesPickerDialogState extends State<MinutesPickerDialog> {
       data: ButtonBarThemeData(),
       child: ButtonBar(
         children: <Widget>[
-          new FlatButton(
+          new TextButton(
               child: new Text(localizations.cancelButtonLabel),
               onPressed: _handleCancel),
-          new FlatButton(
+          new TextButton(
               child: new Text(localizations.okButtonLabel),
               onPressed: _handleOk),
         ],
