@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 blur: 3.0,
                 shadowColor: Colors.black.withOpacity(0.25),
               ),
-              title: Text('Today')),
+              label: 'Today'),
           BottomNavigationBarItem(
               icon: ShadowIcon(
                 Icons.history,
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 blur: 3.0,
                 shadowColor: Colors.black.withOpacity(0.25),
               ),
-              title: Text('History')),
+              label: 'History'),
           BottomNavigationBarItem(
               icon: ShadowIcon(
                 Icons.notifications,
@@ -149,7 +149,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 blur: 3.0,
                 shadowColor: Colors.black.withOpacity(0.25),
               ),
-              title: Text('Notifications')),
+              label: 'Notifications'),
           BottomNavigationBarItem(
               icon: ShadowIcon(
                 Icons.settings,
@@ -158,7 +158,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                 blur: 3.0,
                 shadowColor: Colors.black.withOpacity(0.25),
               ),
-              title: Text('Settings')),
+              label: 'Settings'),
         ],
         backgroundColor: Colors.white,
         iconSize: 28.0,

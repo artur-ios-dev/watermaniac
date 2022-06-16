@@ -21,8 +21,7 @@ class WatermaniacApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.light,
-        primaryColor: const Color(0xFF4C9BFB),
-        accentColor: const Color(0xFFF66BBE),
+        primaryColor: const Color(0xFF4C9BFB), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: const Color(0xFFF66BBE)),
         // f5bad3 (pinkish), c7d0df (grayish), fcfbfe (whiteish)
       ),
       home: StoreProvider(

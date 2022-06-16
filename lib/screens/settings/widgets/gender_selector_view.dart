@@ -63,6 +63,7 @@ class _GenderSelectorViewState extends State<GenderSelectorView> {
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16.0),
+                // ignore: deprecated_member_use
                 child: FlatButton.icon(
                   highlightColor: Colors.transparent,
                   splashColor: Colors.transparent,

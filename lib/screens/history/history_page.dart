@@ -149,6 +149,7 @@ class _HistoryPageState extends State<HistoryPage>
     return Expanded(
       child: Padding(
         padding: EdgeInsets.all(8.0),
+        // ignore: deprecated_member_use
         child: FlatButton(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
